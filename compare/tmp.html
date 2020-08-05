@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head> 
+<head>
+<script type="text/javascript">
+
+function changePic(eleId){
+ var folder = "./userstudy/";
+ var imgObj = document.getElementById(eleId);
+ var Flag = (imgObj.getAttribute("src")==folder + eleId + ".jpg");
+ imgObj.src=Flag?folder + eleId + "_FA-GANs.jpg": folder + eleId + ".jpg";
+}
+
+</script>
 <meta charset="utf-8"> 
 <title>html test</title> 
 </head>
 <body>
+<center><table>
+<tr>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF84.jpg" id="AF84" onclick='changePic("AF84")' width="224" height="224"/>
+	</td>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF112.jpg" id="AF112" onclick='changePic("AF112")' width="224" height="224"/>
+	</td>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF130.jpg" id="AF130" onclick='changePic("AF130")' width="224" height="224"/>
+	</td>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF155.jpg" id="AF155" onclick='changePic("AF155")' width="224" height="224"/>
+	</td>
+</tr>
 
-<h2>test</h2>
-<img border="0" src="./leetcode.png" alt="Pulpit rock" width="304" height="228">
+<tr>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF175.jpg" id="AF175" onclick='changePic("AF175")' width="224" height="224"/>
+	</td>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF186.jpg" id="AF186" onclick='changePic("AF186")' width="224" height="224"/>
+	</td>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF198.jpg" id="AF198" onclick='changePic("AF198")' width="224" height="224"/>
+	</td>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF200.jpg" id="AF200" onclick='changePic("AF200")' width="224" height="224"/>
+	</td>
+</tr>
 
+<tr>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF201.jpg" id="AF201" onclick='changePic("AF201")' width="224" height="224"/>
+	</td>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF207.jpg" id="AF207" onclick='changePic("AF207")' width="224" height="224"/>
+	</td>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF221.jpg" id="AF221" onclick='changePic("AF221")' width="224" height="224"/>
+	</td>
+<td valign="middle" align="center"></td>	<td valign="middle" align="center">
+		<img src="./userstudy/AF234.jpg" id="AF234" onclick='changePic("AF234")' width="224" height="224"/>
+	</td>
+</tr>
+
+</table>
+</center>
 </body>
 </html>
