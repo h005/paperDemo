@@ -1,0 +1,14 @@
+<html>
+<head>
+<script type="text/javascript">
+function changePic(){
+ var imgObj = document.getElementById("picA");
+ var Flag = (imgObj.getAttribute("src")=="AF84.jpg");
+ imgObj.src=Flag?"AF84_FA-GANs.jpg":"AF84.jpg";
+}
+</script>
+</head>
+<body>
+<img src="AF84.jpg" id="picA" onclick="changePic()">
+</body>
+</html>
